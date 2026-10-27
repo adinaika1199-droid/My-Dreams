@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0c1020;
+    color: #fff;
+    line-height: 1.7;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #121a30;
+    padding: 16px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #293450;
+}
+
+.logo {
+    color: #b6a0ff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c5b5ff;
+}
+
+.languages {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background: #8870e8;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #a28fff;
+    transform: translateY(-2px);
+}
+
+.languages button {
+    padding: 8px 10px;
+    background: #252e48;
+}
+
+.languages button.active {
+    background: #8870e8;
+}
+
+.hero {
+    min-height: 85vh;
+    padding: 90px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #35285c, #0c1020 70%);
+}
+
+.eyebrow {
+    color: #c5b5ff;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: clamp(34px, 6vw, 62px);
+    line-height: 1.2;
+    max-width: 900px;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #b6a0ff;
+}
+
+.hero p {
+    max-width: 680px;
+    color: #d0d5e6;
+    margin-bottom: 28px;
+}
+
+.section {
+    padding: 75px 7%;
+    text-align: center;
+    scroll-margin-top: 110px;
+}
+
+.section h2 {
+    color: #b6a0ff;
+    font-size: clamp(25px, 4vw, 35px);
+    margin-bottom: 25px;
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #d0d5e6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 35px auto 0;
+}
+
+.card {
+    background: #151d33;
+    border: 1px solid #303b5a;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: left;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #a28fff;
+}
+
+.card .icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: #d2c6ff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #c6cce0;
+    font-size: 14px;
+}
+
+.soft {
+    background: #11182b;
+}
+
+.schedule {
+    max-width: 750px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.task {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 17px;
+    margin: 12px 0;
+    background: #151d33;
+    border: 1px solid #303b5a;
+    border-radius: 12px;
+}
+
+.task input {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    accent-color: #9b87ff;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.task label {
+    cursor: pointer;
+    flex: 1;
+}
+
+.task small {
+    display: block;
+    color: #aeb8d1;
+    margin-top: 3px;
+}
+
+.task.done label {
+    text-decoration: line-through;
+    opacity: 0.55;
+}
+
+.progress-box {
+    max-width: 750px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.progress-bg {
+    height: 12px;
+    background: #28324d;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #9b87ff;
+    transition: width 0.3s;
+}
+
+.goal-list {
+    list-style: none;
+    max-width: 700px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.goal-list li {
+    padding: 13px;
+    margin: 10px 0;
+    background: #151d33;
+    border-radius: 10px;
+}
+
+.quote {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    border-left: 4px solid #a28fff;
+    background: #151d33;
+    border-radius: 12px;
+    color: #e3dcff;
+}
